@@ -1,0 +1,81 @@
+.main {
+    // display: grid;
+    // grid-template-columns: 1fr auto;
+
+    .section {
+        padding: 3rem 7rem;
+
+        &__img {
+            margin-bottom: 5rem;
+        }
+
+        .hero {
+            position: absolute;
+            right: 0;
+            top: 0;
+            
+            img {
+                max-height: 100vh;
+            }
+        }
+
+        &__h1 {
+            font-size: 5rem;
+            text-transform: uppercase;
+            letter-spacing: 20px;
+            margin-bottom: 1rem;
+            max-width: 450px;
+        }
+
+        &__p{
+            line-height: 1.6;
+            font-size: 1.1rem;
+            color: $clr-desaturated-red;
+            max-width: 500px;
+        }
+
+        &__form {
+            margin-top: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+
+            .form__input {
+                min-width: 450px;
+                height: 45px;
+                padding-inline: 1.5rem;
+                border-radius: 1.4rem;
+                border: 1px solid $clr-desaturated-red;
+            }
+
+            .form__button {
+                background: linear-gradient(90deg, rgba(250, 250, 250, 1) 0%, rgba(232, 116, 71, 1) 100%);
+                height: 45px;
+                width: 70px;
+                padding: 3px 10px;
+                border-radius: 1.4rem;
+                display: grid;
+                place-content: center;
+                position: relative;
+                right: 40px;
+                cursor: pointer;
+                transition: .3s ease-in;
+                z-index: 2;
+                box-shadow: 0 7px 5px $clr-desaturated-red;
+
+                &:hover {
+                    background: $clr-soft-red;
+                }
+            }
+        }
+    }
+
+    .img-box {
+        img {
+            background-image: url(/images/hero-desktop.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+}

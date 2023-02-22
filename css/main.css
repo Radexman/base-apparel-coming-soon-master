@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+.nowrap {
+  white-space: nowrap;
+  color: hsl(0, 36%, 70%);
+  font-weight: 300;
+}
+
+.main .section {
+  padding: 3rem 7rem;
+}
+.main .section__img {
+  margin-bottom: 5rem;
+}
+.main .section .hero {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.main .section .hero img {
+  max-height: 100vh;
+}
+.main .section__h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  margin-bottom: 1rem;
+  max-width: 450px;
+}
+.main .section__p {
+  line-height: 1.6;
+  font-size: 1.1rem;
+  color: hsl(0, 36%, 70%);
+  max-width: 500px;
+}
+.main .section__form {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.main .section__form .form__input {
+  min-width: 450px;
+  height: 45px;
+  padding-inline: 1.5rem;
+  border-radius: 1.4rem;
+  border: 1px solid hsl(0, 36%, 70%);
+}
+.main .section__form .form__button {
+  background: linear-gradient(90deg, rgb(250, 250, 250) 0%, rgb(232, 116, 71) 100%);
+  height: 45px;
+  width: 70px;
+  padding: 3px 10px;
+  border-radius: 1.4rem;
+  display: grid;
+  place-content: center;
+  position: relative;
+  right: 40px;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+  z-index: 2;
+  box-shadow: 0 7px 5px hsl(0, 36%, 70%);
+}
+.main .section__form .form__button:hover {
+  background: hsl(0, 93%, 68%);
+}
+.main .img-box img {
+  background-image: url(/images/hero-desktop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img, picture, svg, video {
+  display: block;
+  max-width: 100%;
+}
+
+input, textarea, button, select {
+  font: inherit;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%));
+  font-family: "Josefin Sans", sans-serif;
+  color: hsl(0, 5%, 7%);
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=main.css.map */

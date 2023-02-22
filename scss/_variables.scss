@@ -1,0 +1,21 @@
+// Variables for the project
+
+// Colors
+$clr-desaturated-red: hsl(0, 36%, 70%);
+$clr-soft-red: hsl(0, 93%, 68%);
+$clr-dark-grayish-red: hsl(0, 6%, 68%);
+$clr-txt-dark: hsl(0, 5%, 7%);
+// Gradients
+$gradient-one: linear-gradient(135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%));
+$gradient-two: linear-gradient(135deg,
+from hsl(0, 80%, 86%),
+to hsl(0, 74%, 74%));
+// Typography
+$font-primary: 'Josefin Sans', sans-serif;
+
+// Utilities
+.nowrap {
+    white-space: nowrap;
+    color: $clr-desaturated-red;
+    font-weight: 300;
+}

@@ -1,0 +1,37 @@
+// SCSS Partial Imports
+@import './variables';
+@import './component';
+
+// Font import
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+// Basic reset
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img, picture, svg, video {
+    display: block;
+    max-width: 100%;
+}
+
+input, textarea, button, select {
+    font: inherit;
+}
+
+body {
+    min-height: 100vh;
+    background: $gradient-one;
+    font-family: $font-primary;
+    color: $clr-txt-dark;
+}
+
+html {
+    scroll-behavior: smooth;
+    // color-scheme: light dark;
+    font-size: 16px;
+}
