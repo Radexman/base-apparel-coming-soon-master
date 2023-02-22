@@ -16,7 +16,7 @@
   right: 0;
   top: 0;
 }
-.main .section .hero img {
+.main .section .hero__img {
   max-height: 100vh;
 }
 .main .section__h1 {
@@ -37,6 +37,7 @@
   display: flex;
   align-items: center;
   justify-content: start;
+  position: relative;
 }
 .main .section__form .form__input {
   min-width: 450px;
@@ -63,13 +64,24 @@
 .main .section__form .form__button:hover {
   background: hsl(0, 93%, 68%);
 }
-.main .img-box img {
-  background-image: url(/images/hero-desktop.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+.main .section__form .error-icon {
+  position: absolute;
+  left: -35px;
+  top: 10px;
+  display: none;
+}
+.main .section .error-msg {
+  position: absolute;
+  top: 55px;
+  left: 20px;
+  display: none;
 }
 
+@media screen and (max-width: 1000px) {
+  body {
+    background-color: black;
+  }
+}
 *,
 *::before,
 *::after {

@@ -1,22 +1,20 @@
-// function ValidateEmail(input) {
-// 	validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-
-// 	if (input.value.match(validRegex)) {
-// 		alert('Valid email address!');
-// 		document.form1.text1.focus();
-// 		return true;
-// 	} else {
-// 		alert('Invalid email address!');
-// 		document.form1.text1.focus();
-// 		return false;
-// 	}
-// }
-
-const inputField = document.querySelector('.form__input');
+const regEx = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+const email = document.querySelector('.form__input');
+const errorMsg = document.querySelector('.error-msg');
+const errorIcon = document.querySelector('.error-icon');
 const button = document.querySelector('.form__button');
 
-button.addEventListener('submit', () => {
-	if ((inputField.value = '')) {
-		inputField.getAttribute('placeholder') = 'Enter your email';
-	}
+button.addEventListener('click', (e) => {
+	e.preventDefault();
+	checkEmail();
 });
+
+const checkEmail = () => {
+	if (!regEx.test(email.value)) {
+		errorMsg.style.display = 'block';
+		errorIcon.style.display = 'block';
+	} else {
+		errorMsg.style.display = 'none';
+		errorIcon.style.display = 'none';
+	}
+};
